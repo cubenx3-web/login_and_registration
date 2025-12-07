@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  
+  font-family:  "Open Sans", Arial, Helvetica, sans-serif ;
 }
 
 body{
@@ -15,11 +15,8 @@ body{
   justify-content: center;
   align-items: center;
   background-image:url("/image/team-wallpaper.png");
-  background-size:cover;
-  
-  
+  background-size: 100% 100%;
 }
-
 
 .reg-container{
   display: flex;
@@ -29,10 +26,19 @@ body{
   width: 400px;
   height: 450px;
   padding: 15px;
+  padding-bottom: 25px;
   box-shadow: 0 0 100px 0px rgba(205, 201, 201, 0.247); 
   border-radius: 10px;
   backdrop-filter: blur(10px);
   gap: 10px;
+}
+
+.reg-head{
+  padding: 10px;
+  font-size: xx-large;
+  width: 100%;
+  text-align: center;
+  text-decoration-line: underline;
 }
 
 form{
@@ -47,6 +53,9 @@ form{
 }
 
 input{
+  background: rgba(245, 242, 242, 0.544);
+  backdrop-filter: blur(2em);
+  color: rgb(171, 169, 169);
   height: 100px;
   width: 100%;
   font-family:cursive;
@@ -60,7 +69,7 @@ input{
 .btn{
   width: 100%;
   text-align: center;
-  padding: 10px;
+  padding: 12px;
   border-radius: 5px;
   background: rgb(21, 8, 255);
   color: white;
@@ -74,4 +83,14 @@ input{
 
 .btn:active{
   background: rgb(15, 5, 206);
+}
+
+.to-login{
+  text-decoration-line: underline;
+  cursor: pointer;
+  color: white;
+}
+
+.to-login:hover{
+  color: blue;
 }
